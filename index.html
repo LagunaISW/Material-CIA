@@ -12,7 +12,7 @@
       <!-- Titulo -->
       <title>ITSON - CIA</title>
       <!-- Descripcion: 155 caracteres -->
-      <meta name="description" content="Descripcion que aparece en buscadores" />
+      <meta name="description" content="Sistema CIA ITSON" />
       <!-- Librerias css -->
       <link rel="stylesheet" href="./css/lib/normalize.css" />
       <link rel="stylesheet" href="./css/lib/material.min.css" />
@@ -21,6 +21,8 @@
       <link rel="stylesheet" href="./css/master.css" />
     </head>
     <body>
+
+
     <div class="layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="header mdl-layout__header mdl-color--blue-600 mdl-color-text--white">
             <div class="mdl-layout__header-row">
@@ -39,7 +41,8 @@
                     <i class="material-icons">more_vert</i>
                 </button>
                 <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-                    <li class="mdl-menu__item">Cerrar Sesion...</li>
+                    <li class="mdl-menu__item"><a href="./login.html" style="text-decoration: none">Cerrar Sesion...</a></li>
+
                 </ul>
             </div>
         </header>
@@ -61,16 +64,23 @@
                 </div>
             </header>
             <nav class="navigation mdl-navigation mdl-color--blue-600">
-                <a class="mdl-navigation__link mdl-color-text--white" href=""><i class="mdl-color-text--white material-icons" role="presentation">home</i>Pagina principal</a>
-                <a class="mdl-navigation__link mdl-color-text--white" href=""><i class="mdl-color-text--white material-icons" role="presentation">class</i>Situacion Academica</a>
-                <a class="mdl-navigation__link mdl-color-text--white" href=""><i class="mdl-color-text--white material-icons" role="presentation">playlist_add_check</i>Inscripciones</a>
-                <a class="mdl-navigation__link mdl-color-text--white" href=""><i class="mdl-color-text--white material-icons" role="presentation">attach_money</i>Finanzas</a>
+                <a class="mdl-navigation__link mdl-color-text--white" href="./index.html"><i class="mdl-color-text--white material-icons" role="presentation">home</i>Pagina principal</a>
+                <a class="mdl-navigation__link mdl-color-text--white" href="./situacion.html"><i class="mdl-color-text--white material-icons" role="presentation">class</i>Situacion Academica</a>
+                <a class="mdl-navigation__link mdl-color-text--white" href="./inscripciones.html"><i class="mdl-color-text--white material-icons" role="presentation">playlist_add_check</i>Inscripciones</a>
+                <a class="mdl-navigation__link mdl-color-text--white" href="./finanzas.html"><i class="mdl-color-text--white material-icons" role="presentation">attach_money</i>Finanzas</a>
                 <div class="mdl-layout-spacer"></div>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--white material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Ayuda</span></a>
             </nav>
         </div>
         <main class="mdl-layout__content mdl-color--grey-100">
             <div class="mdl-grid content">
+                <!-- Start Page Loading -->
+                <div id="loader-wrapper">
+                    <div id="loader"></div>
+                    <div class="loader-section section-left"></div>
+                    <div class="loader-section section-right"></div>
+                </div>
+                <!-- End Page Loading -->
                 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
                     <div class="mdl-card mdl-cell mdl-cell--12-col">
                         <div class="mdl-card__supporting-text">
@@ -83,62 +93,75 @@
                         </div>
                     </div>
                 </section>
-                <div class="graphs mdl-cell mdl-cell--8-col">
-                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-cell--12-col">
-                        <thead>
-                        <tr>
-                            <th class="mdl-data-table__cell--non-numeric">Materia</th>
-                            <th>Dias</th>
-                            <th>Horario</th>
-                            <th>Maestro</th>
-                            <th>Aula</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">Matematicas Computacionales</td>
-                            <td>LuMaMi</td>
-                            <td>7:00 - 8:00</td>
-                            <td>L. Godinez</td>
-                            <td>902</td>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">Matematicas Discretas</td>
-                            <td>LuMiVi</td>
-                            <td>7:00 - 8:00</td>
-                            <td>L. Godinez</td>
-                            <td>901</td>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">Metodos Numericos Computacionales</td>
-                            <td>MaJu</td>
-                            <td>7:00 - 8:00</td>
-                            <td>L. Godinez</td>
-                            <td>924</td>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">Programacion 3</td>
-                            <td>LuMiVi</td>
-                            <td>7:00 - 8:00</td>
-                            <td>L. Godinez</td>
-                            <td>721</td>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">Bases de Datos</td>
-                            <td>MaMiJu</td>
-                            <td>7:00 - 8:00</td>
-                            <td>L. Godinez</td>
-                            <td>102</td>
-                        </tr>
-                        <tr>
-                            <td class="mdl-data-table__cell--non-numeric">Optativa 3</td>
-                            <td>LuMaMi</td>
-                            <td>7:00 - 8:00</td>
-                            <td>L. Godinez</td>
-                            <td>902</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div class="cards mdl-cell mdl-cell--8-col mdl-shadow--2dp mdl-color--white">
+                    <ul class=" mdl-list">
+                        <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                                <span>Programacion 3</span>
+                                <span class="mdl-list__item-sub-title">Lunes/Miercoles/Viernes | 9:00 am - 10:00 am</span>
+                            </span>
+                            <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Aula</span>
+                                <span class="mdl-list__item-secondary-content">923</span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                                <span>Optativa 1</span>
+                                <span class="mdl-list__item-sub-title">Martes/Jueves | 9:00 am - 10:00 am</span>
+                            </span>
+                            <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Aula</span>
+                                <span class="mdl-list__item-secondary-content">921</span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                                <span>Metodos Numericos</span>
+                                <span class="mdl-list__item-sub-title">Lunes/Miercoles/Viernes | 7:00 am - 9:00 am</span>
+                            </span>
+                            <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Aula</span>
+                                <span class="mdl-list__item-secondary-content">113</span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                                <span>Calculo 8</span>
+                                <span class="mdl-list__item-sub-title">Martes/Jueves | 8:00 am - 9:00 am</span>
+                            </span>
+                            <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Aula</span>
+                                <span class="mdl-list__item-secondary-content">602</span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                                <span>Diseño de Sistemas Interactivos</span>
+                                <span class="mdl-list__item-sub-title">Lunes/Miercoles/Viernes | 10:00 am - 11:00 am</span>
+                            </span>
+                            <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Aula</span>
+                                <span class="mdl-list__item-secondary-content">923</span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                                <span>Diseño de Sistemas Interactivos 2</span>
+                                <span class="mdl-list__item-sub-title">Martes/Jueves | 10:00 am - 11:00 am</span>
+                            </span>
+                            <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Aula</span>
+                                <span class="mdl-list__item-secondary-content">923</span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                                Imprimir
+                            </button>
+                        </li>
+                    </ul>
+
                 </div>
                 <div class="cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
                     <div class="updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
@@ -159,6 +182,8 @@
                         </div>
                     </div>
                     <div class="separator mdl-cell--1-col"></div>
+
+
                 </div>
             </div>
         </main>
