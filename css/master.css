@@ -16,9 +16,7 @@ html, body {
 .layout .header .mdl-textfield .mdl-textfield__expandable-holder {
   bottom: 19px;
 }
-.layout .mdl-layout__header .mdl-layout__drawer-button {
-  color: rgba(0, 0, 0, 0.54);
-}
+
 .mdl-layout__drawer .avatar {
   margin-bottom: 16px;
 }
@@ -230,7 +228,7 @@ _:-ms-input-placeholder, :root .graph {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #FFFFFF;
+  border-top-color: #2196F3;
   -webkit-animation: spin 2s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
 
@@ -328,7 +326,7 @@ _:-ms-input-placeholder, :root .graph {
   top: 0;
   width: 51%;
   height: 100%;
-  background: #2196F3;
+  background: #424242;
   z-index: 1000;
   -webkit-transform: translateX(0);
   /* Chrome, Opera 15+, Safari 3.1+ */
@@ -399,4 +397,8 @@ _:-ms-input-placeholder, :root .graph {
 }
 .progress{
   background-color: rgba(255, 255, 255);
+}
+
+table{
+  width: calc(100% - 0px) !important;
 }
